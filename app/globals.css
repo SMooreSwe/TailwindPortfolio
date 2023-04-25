@@ -25,3 +25,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer components {
+  .navBar-Link {
+    @apply hover:text-emerald-500 hover:font-bold 
+    flex justify-between gap-1 items-center
+    transition-all ease-linear
+  }
+}
