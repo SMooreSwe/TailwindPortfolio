@@ -7,7 +7,7 @@ import { faHome, faInfoCircle, faRectangleList } from '@fortawesome/free-solid-s
 const NavBar = () => {
   return (
     <>
-    <nav className="bg-gray-500 px-5 py-2 w-screen">
+    <nav className="bg-gray-500 px-5 py-2">
         <ul className="flex flex-row gap-5">
             <li>
                 <Link href={'/'} className="navBar-Link">
