@@ -27,9 +27,18 @@ body {
 }
 
 @layer components {
-  .navBar-Link {
-    @apply hover:text-emerald-500 hover:font-bold
-    flex justify-between gap-1 items-center
-    transition-all ease-linear
+  .navIcon {
+    @apply relative flex items-center justify-center
+    h-12 w-12 mx-auto bg-gray-800
+    rounded-3xl
+    hover:bg-emerald-600 hover:rounded-xl
+    transition-all duration-200 ease-linear
+  }
+  .navIcon-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max left-12
+    rounded-md shadow-md
+    text-white bg-gray-600
+    text-sm font-semibold
+    transition-all duration-100 scale-0 origin-left
   }
 }

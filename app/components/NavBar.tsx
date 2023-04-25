@@ -1,33 +1,41 @@
 import Link from 'next/link'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faInfoCircle, faRectangleList } from '@fortawesome/free-solid-svg-icons'
-
+import { IconDefinition, faHome, faInfoCircle, faRectangleList } from '@fortawesome/free-solid-svg-icons'
+import { RouteHandlerManager } from 'next/dist/server/future/route-handler-managers/route-handler-manager'
+import { icon } from '@fortawesome/fontawesome-svg-core'
 
 const NavBar = () => {
   return (
     <>
-    <nav className="bg-gray-500 px-5 py-2">
-        <ul className="flex flex-row gap-5">
-            <li>
-                <Link href={'/'} className="navBar-Link">
-                <FontAwesomeIcon icon={faHome} className="w-4 h-4" />Home
-                </Link>
-            </li>
-            <li>
-                <Link href={'/projects'} className="navBar-Link">
-                <FontAwesomeIcon icon={faRectangleList} className="w-4 h-4" />Projects
-                </Link>
-            </li>
-            <li>
-                <Link href={'/about'} className="navBar-Link">
-                <FontAwesomeIcon icon={faInfoCircle} className="w-4 h-4" />About
-                </Link>
-            </li>
+    <nav className="bg-gray-500 px-5 py-5 h-screen fixed top-0 left-0">
+        <ul className="flex flex-col gap-5">
+            <NavLink route={'/'} icon={faHome} text={'Home'}/>
+            <NavLink route={'/projects'} icon={faRectangleList} text={'Projects'}/>
+            <NavLink route={'/about'} icon={faInfoCircle} text={'About'}/>
         </ul>
     </nav>
     </>
   )
 }
+
+type navLinkProps = {
+    route: string,
+    icon: IconDefinition,
+    text: string
+}
+const NavLink = (props: navLinkProps) => {
+    const {route, icon, text} = props
+    return(
+    <>
+    <li className='navIcon group'>
+        <Link href={route}>
+        <FontAwesomeIcon icon={icon} className="w-6 h-6" />
+        </Link>
+        <span className="navIcon-tooltip group-hover:scale-100">{text}</span>
+    </li>
+    </>
+    );
+}    
 
 export default NavBar
