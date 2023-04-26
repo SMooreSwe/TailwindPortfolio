@@ -35,10 +35,10 @@ body {
     transition-all duration-200 ease-linear
   }
   .navIcon-tooltip {
-    @apply absolute w-auto p-2 m-2 min-w-max left-12
+    @apply absolute w-auto p-2 m-2 min-w-max top-12
     rounded-md shadow-md
     text-white bg-gray-600
     text-sm font-semibold
-    transition-all duration-100 scale-0 origin-left
+    transition-all duration-100 scale-0 origin-top
   }
 }

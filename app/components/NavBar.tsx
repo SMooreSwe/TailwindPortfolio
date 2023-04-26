@@ -1,15 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { IconDefinition, faHome, faInfoCircle, faRectangleList } from '@fortawesome/free-solid-svg-icons'
-import { RouteHandlerManager } from 'next/dist/server/future/route-handler-managers/route-handler-manager'
-import { icon } from '@fortawesome/fontawesome-svg-core'
+import { IconDefinition, faHome, faInfoCircle, faRectangleList} from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () => {
   return (
     <>
-    <nav className="bg-gray-500 px-5 py-5 h-screen fixed top-0 left-0">
-        <ul className="flex flex-col gap-5">
+    <nav className="bg-gray-500 w-max m-5 px-5 py-5 rounded-2xl fixed right-0">
+        <ul className="flex flex-row gap-5">
             <NavLink route={'/'} icon={faHome} text={'Home'}/>
             <NavLink route={'/projects'} icon={faRectangleList} text={'Projects'}/>
             <NavLink route={'/about'} icon={faInfoCircle} text={'About'}/>
