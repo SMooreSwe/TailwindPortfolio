@@ -6,8 +6,8 @@ import { IconDefinition, faHome, faInfoCircle, faRectangleList} from '@fortaweso
 const NavBar = () => {
   return (
     <>
-    <nav className="bg-gray-500 w-max m-5 px-5 py-5 rounded-2xl fixed right-0">
-        <ul className="flex flex-row gap-5">
+    <nav className="bg-gray-500 w-max m-5 px-5 py-5 rounded-2xl fixed right-0 z-50">
+        <ul className="flex gap-5">
             <NavLink route={'/'} icon={faHome} text={'Home'}/>
             <NavLink route={'/projects'} icon={faRectangleList} text={'Projects'}/>
             <NavLink route={'/about'} icon={faInfoCircle} text={'About'}/>
