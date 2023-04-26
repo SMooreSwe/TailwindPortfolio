@@ -41,4 +41,10 @@ body {
     text-sm font-semibold
     transition-all duration-100 scale-0 origin-top
   }
+
+  .main__button {
+    @apply text-xl bg-gray-800 rounded-2xl py-2 px-5 w-fit 
+    hover:bg-emerald-600 hover:rounded-xl 
+    transition-all duration-200 ease-linear
+  }
 }
