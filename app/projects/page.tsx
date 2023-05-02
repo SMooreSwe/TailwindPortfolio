@@ -1,10 +1,17 @@
 import React from 'react'
-import NavBar from '../components/NavBar'
+import TimelineSection from '../components/TimelineSection'
 
 const Projects = () => {
+
+  const projectList = ['[project Project]', 'Tech Interview Helper', 'React Gallery', 'To-Do List']
+
   return (
     <>
-    <div>Projects</div>
+    {projectList.map((project, index) => {
+      return (
+      <TimelineSection key={crypto.randomUUID()} name={project}/>
+      )}
+    )}
     </>
   )
 }
