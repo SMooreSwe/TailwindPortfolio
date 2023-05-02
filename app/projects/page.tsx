@@ -1,5 +1,6 @@
 import React from 'react'
 import TimelineSection from '../components/TimelineSection'
+import { uuid } from 'uuidv4';
 
 const Projects = () => {
 
@@ -9,7 +10,7 @@ const Projects = () => {
     <>
     {projectList.map((project, index) => {
       return (
-      <TimelineSection key={crypto.randomUUID()} name={project}/>
+      <TimelineSection key={uuid()} name={project}/>
       )}
     )}
     </>
