@@ -9,8 +9,8 @@ const NavBar = () => {
     <nav className="bg-gray-500 w-max m-5 px-5 py-5 rounded-2xl fixed right-0 z-50">
         <ul className="flex gap-5">
             <NavLink route={'/'} icon={faHome} text={'Home'}/>
-            <NavLink route={'/projects'} icon={faRectangleList} text={'Projects'}/>
-            <NavLink route={'/about'} icon={faInfoCircle} text={'About'}/>
+            <NavLink route={'/projects'} icon={faRectangleList} text={'My Projects'}/>
+            <NavLink route={'/about'} icon={faInfoCircle} text={'About Me'}/>
         </ul>
     </nav>
     </>
