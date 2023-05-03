@@ -8,11 +8,14 @@ const Projects = () => {
 
   return (
     <>
-    {projectList.map((project, index) => {
-      return (
-      <TimelineSection key={uuid()} name={project}/>
-      )}
-    )}
+    <header className='pt-[20vh] pb-[35vh] mx-[75px] text-7xl'>My Projects</header>
+      <div className='project-timeline flex overflow-y-auto'>
+        {projectList.map((project, index) => {
+          return (
+          <TimelineSection key={uuid()} name={project}/>
+          )}
+        )}
+      </div>
     </>
   )
 }
