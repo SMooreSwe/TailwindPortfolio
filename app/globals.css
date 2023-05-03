@@ -68,6 +68,10 @@ body {
   }
 
   .project-timeline {
-    @apply h-72 pt-8 border-white border-t-4
+    @apply h-72 pt-8 border-white border-t-4 snap-x snap-mandatory
+  }
+
+  .project-timeline > * {
+    @apply snap-center
   }
 }
