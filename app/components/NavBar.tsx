@@ -1,7 +1,8 @@
-import Link from 'next/link'
+'use client'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IconDefinition, faHome, faInfoCircle, faRectangleList} from '@fortawesome/free-solid-svg-icons'
+import { useRouter } from 'next/navigation'
 
 const NavBar = () => {
   return (
@@ -24,12 +25,11 @@ type navLinkProps = {
 }
 const NavLink = (props: navLinkProps) => {
     const {route, icon, text} = props
+    const router = useRouter();
     return(
     <>
-    <li className='navIcon group'>
-        <Link href={route}>
+    <li className='navIcon group' onClick={()=> router.push(route)}>
         <FontAwesomeIcon icon={icon} className="w-6 h-6" />
-        </Link>
         <span className="navIcon-tooltip group-hover:scale-100">{text}</span>
     </li>
     </>

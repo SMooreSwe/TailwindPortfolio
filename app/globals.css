@@ -42,7 +42,7 @@ body {
 
 @layer components {
   .navIcon {
-    @apply relative flex items-center justify-center
+    @apply relative flex items-center justify-center cursor-pointer
     h-12 w-12 mx-auto bg-gray-800
     rounded-3xl
     hover:bg-emerald-600 hover:rounded-xl
