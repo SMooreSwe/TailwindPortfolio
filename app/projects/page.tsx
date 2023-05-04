@@ -8,7 +8,7 @@ const Projects = () => {
 
   return (
     <>
-    <header className='pt-[10vh] pb-[7vh] mx-12 text-6xl'>My Projects</header>
+    <header className='max-sm:pt-[20vh] pt-[10vh] pb-[7vh] mx-12 text-6xl'>My Projects</header>
       <div className='project-scroller mx-12'>
         {projectList.map((project, index) => {
           return (
