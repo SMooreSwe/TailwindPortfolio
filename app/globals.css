@@ -81,7 +81,7 @@ body {
   }
 
   .project-section__content {
-    @apply flex flex-wrap items-start gap-4 py-6 bg-emerald-200 rounded-2xl
+    @apply flex flex-wrap items-start gap-4 py-6 px-4 bg-emerald-200 rounded-2xl
   }
 
   .project-section__content > :first-child {

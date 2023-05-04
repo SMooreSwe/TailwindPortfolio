@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation'
 const NavBar = () => {
   return (
     <>
-    <nav className="bg-gray-500 w-max m-5 px-5 py-5 rounded-2xl fixed right-0 max-sm:w-screen z-50">
+    <nav className="bg-gray-500 w-max m-5 px-5 py-5 rounded-2xl fixed right-0 max-sm:w-[90%] z-50">
         <ul className="flex gap-5">
             <NavLink route={'/'} icon={faHome} text={'Home'}/>
             <NavLink route={'/projects'} icon={faRectangleList} text={'My Projects'}/>
