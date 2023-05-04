@@ -1,6 +1,6 @@
 import React from 'react'
 import TimelineSection from '../components/TimelineSection'
-import { uuid } from 'uuidv4';
+import { v4 as uuidv4 } from 'uuid';
 
 const Projects = () => {
 
@@ -8,11 +8,11 @@ const Projects = () => {
 
   return (
     <>
-    <header className='pt-[20vh] pb-[35vh] mx-[75px] text-7xl'>My Projects</header>
-      <div className='project-timeline flex overflow-y-auto'>
+    <header className='pt-[10vh] pb-[7vh] mx-12 text-6xl'>My Projects</header>
+      <div className='project-scroller mx-12'>
         {projectList.map((project, index) => {
           return (
-          <TimelineSection key={uuid()} name={project}/>
+          <TimelineSection key={uuidv4()} name={project}/>
           )}
         )}
       </div>

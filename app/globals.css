@@ -26,17 +26,17 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.project-timeline::-webkit-scrollbar {
+.project-scroller::-webkit-scrollbar {
   width: 20px
 }
 
-.project-timeline::-webkit-scrollbar-track {
+.project-scroller::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 
 
-.project-timeline::-webkit-scrollbar-thumb {
-  background: rgb(75 85 99);
+.project-scroller::-webkit-scrollbar-thumb {
+  background: rgba(31, 41, 55, 0.6);
   border-radius: 10px;
 }
 
@@ -62,16 +62,34 @@ body {
     transition-all duration-200 ease-linear
   }
 
+  .icon-container {
+    @apply flex justify-center content-center gap-5
+  }
+
   .Projects__timeline-header {
-    @apply grid content-center justify-start min-w-[30vw] ml-[75px]
-    relative opacity-0 translate-y-[100%]
+    @apply grid content-center justify-center text-center mb-3 text-lg
+    relative opacity-0 max-w-fit mx-auto
+  }
+ 
+  .project-scroller {
+    @apply h-[75vh] snap-x snap-mandatory grid gap-10 grid-flow-col 
+    overflow-x-auto overscroll-contain auto-cols-[90%]
   }
 
-  .project-timeline {
-    @apply h-72 pt-8 border-white border-t-4 snap-x snap-mandatory
+  .project-scroller > * {
+    @apply snap-start
   }
 
-  .project-timeline > * {
-    @apply snap-center
+  .project-section__content {
+    @apply flex flex-wrap items-start gap-4 py-6 bg-emerald-200 rounded-2xl
   }
+
+  .project-section__content > :first-child {
+    @apply max-h-[60vh] basis-[300px] grow-[9999]
+  }
+
+  .project-section__content > :last-child {
+    @apply basis-[400px] grow
+  }  
 }
+

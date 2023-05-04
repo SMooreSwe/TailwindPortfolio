@@ -15,12 +15,17 @@ const TimelineSection = (props: TimelineProps) => {
   const isInView = useInView(ref, {once: true})
 
   return (
-    <section>
+    <section className='project-section'>
       <h2 className="Projects__timeline-header" ref={ref} style={{
-          transform: isInView ? "none" : "translateY(150%)",
-          opacity: isInView ? 1 : 0,
-          transition: "ease-in 1s 0.5s"
-        }}>{name}</h2>
+      transform: isInView ? "none" : "translateY(-100%)",
+      opacity: isInView ? 1 : 0,
+      transition: "ease-in 1s 0.5s"
+      }}>{name}</h2>
+    <div className='project-section__content'>
+      <img src="/project-example.jpg" alt="view of [project Project]" className='object-contain' />
+      <aside>This is the text that describes the site</aside>
+    </div>
+      
     </section>
   )
 }
