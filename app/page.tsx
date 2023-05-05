@@ -11,9 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
-    <main className='flex justify-start content-center h-screen'>
-      <div className='home-main pl-[20%] w-screen mt-16 mb-36'>
-        <div className='flex justify-between w-[80%] max-h-[60vh]'>
+    <main className='flex justify-evenly content-center h-screen'>
           <div className='flex justify-center flex-col py-[25%] gap-5'>
             <h1 className='text-8xl'>Stephen Moore</h1>
             <h3 className='px-2 max-w-2xl'>I am a full stack JavaScript Developer. Previously a lawyer in England, I now use those problem-solving skills in the technical field.</h3>
@@ -29,9 +27,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-            <img src="/IMG_4588.jpg" alt="a picture of me!" className='h-[50vh] object-cover self-center aspect-square rounded-full'/>
-        </div>
-      </div>
+            <img src="/IMG_4588.jpg" alt="a picture of me!" className='h-[50%] object-cover self-center aspect-square rounded-full'/>
     </main>
     <footer className='fixed bg-gray-800 w-screen h-20 bottom-0 flex flex-col items-center justify-center gap-2 pb-2'>
       <h5 className='mx-auto mt-1'>The tools I use</h5>
