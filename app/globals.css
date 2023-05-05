@@ -73,7 +73,7 @@ body {
  
   .project-scroller {
     @apply h-[75vh] snap-x snap-mandatory grid gap-10 grid-flow-col 
-    overflow-x-auto overscroll-contain auto-cols-[90%]
+    overflow-x-auto overscroll-contain auto-cols-[85%] sm:auto-cols-[90%]
   }
 
   .project-scroller > * {
@@ -81,15 +81,15 @@ body {
   }
 
   .project-section__content {
-    @apply flex flex-wrap items-start gap-4 py-6 px-4 bg-emerald-200 rounded-2xl
+    @apply flex flex-wrap items-start gap-1 py-6 px-2 bg-[#209cee] rounded-2xl
   }
 
   .project-section__content > :first-child {
-    @apply max-h-[60vh] basis-[300px] grow-[9999]
+    @apply lg:max-h-72 xl:max-h-[500px] basis-[500px] grow-[9999]
   }
 
   .project-section__content > :last-child {
-    @apply basis-[400px] grow
+    @apply basis-[270px] grow
   }  
 }
 
