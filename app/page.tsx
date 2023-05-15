@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
     <main className='flex flex-col gap-6 content-center h-[70vh] mt-24'>
-            <h1 className='text-3xl pl-4'>Stephen Moore</h1>
+            <h1 className='text-4xl text-buttons font-bold pl-4 main__name'>Stephen Moore</h1>
             <h3 className='px-4'>I am a full stack JavaScript Developer. Previously a lawyer in England, I now use those problem-solving skills in the technical field.</h3>
             <div className='flex flex-col px-4 gap-2'>
               <Link href={'/projects'}>
@@ -29,7 +29,7 @@ export default function Home() {
               </div>
             </div>
     </main>
-    <footer className='fixed bg-buttons w-screen h-20 bottom-0 flex flex-col items-center justify-center gap-2 pb-2'>
+    <footer className='fixed bg-secondary w-screen h-20 bottom-0 flex flex-col items-center justify-center gap-1 pb-2'>
       <h5 className='mx-auto mt-1'>The tools I use</h5>
       <div className='icon-container'>
         <div className=''><img src="/JS-icon.png" alt="JavaScript Icon" className="h-8"/></div>
