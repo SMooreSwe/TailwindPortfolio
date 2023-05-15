@@ -62,6 +62,12 @@ body {
     transition-all duration-200 ease-linear
   }
 
+  .social__button {
+    @apply bg-transparent rounded-2xl py-2 px-2 w-fit 
+    hover:bg-emerald-600 hover:rounded-xl 
+    transition-all duration-200 ease-linear
+  }
+
   .icon-container {
     @apply flex justify-center content-center gap-5
   }
@@ -91,4 +97,9 @@ body {
   .project-section__content > :last-child {
     @apply basis-[270px] grow
   }  
+}
+
+
+.blob {
+  border-radius: 41% 59% 69% 31% / 59% 32% 68% 41%;
 }

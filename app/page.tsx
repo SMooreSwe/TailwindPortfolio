@@ -11,23 +11,23 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
-    <main className='flex justify-evenly content-center h-screen'>
-          <div className='flex justify-center flex-col py-[25%] gap-5'>
-            <h1 className='text-8xl'>Stephen Moore</h1>
-            <h3 className='px-2 max-w-2xl'>I am a full stack JavaScript Developer. Previously a lawyer in England, I now use those problem-solving skills in the technical field.</h3>
-            <div className='flex px-1 gap-2'>
+    <main className='flex flex-col gap-6 content-center h-[70vh] mt-24'>
+            <h1 className='text-3xl pl-4'>Stephen Moore</h1>
+            <h3 className='px-4'>I am a full stack JavaScript Developer. Previously a lawyer in England, I now use those problem-solving skills in the technical field.</h3>
+            <div className='flex flex-col px-4 gap-2'>
               <Link href={'/projects'}>
                 <button className='main__button flex gap-1'><FontAwesomeIcon icon={faRectangleList} className="w-4 h-4 mt-[0.38rem]" />See my Projects</button>
               </Link>
-              <Link href={'https://github.com/SMooreSwe'} target="_blank">
-                <button className='main__button flex gap-1'> <img src="/icons8-github-50.png" alt="" className="w-4 h-4 mt-[0.38rem]"/> Check out my github</button>
-              </Link>
-              <Link href={'https://www.linkedin.com/in/stephen-moore-swe/'} target="_blank">
-                <button className='main__button flex gap-1'> <img src="/icons8-linkedin-50.png" alt="" className="w-4 h-4 mt-[0.38rem]"/> Connect on LinkedIn</button>
-              </Link>
+              <div className='social-container flex gap-2'>
+                <p className='pl-2 pt-2 align-middle'>Connect on:</p>
+                <Link href={'https://github.com/SMooreSwe'} target="_blank">
+                  <button className='social__button flex gap-1'><img src="/icons8-github-50.png" alt="" className="w-6 h-6"/></button>
+                </Link>
+                <Link href={'https://www.linkedin.com/in/stephen-moore-swe/'} target="_blank">
+                  <button className='social__button flex gap-1'><img src="/icons8-linkedin-50.png" alt="" className="w-6 h-6"/></button>
+                </Link>
+              </div>
             </div>
-          </div>
-            <img src="/IMG_4588.jpg" alt="a picture of me!" className='h-[50%] object-cover self-center aspect-square rounded-full'/>
     </main>
     <footer className='fixed bg-gray-800 w-screen h-20 bottom-0 flex flex-col items-center justify-center gap-2 pb-2'>
       <h5 className='mx-auto mt-1'>The tools I use</h5>

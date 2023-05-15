@@ -20,7 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NavBar/>
+        <div className="flex justify-between pl-4 w-screen">
+          <img src="/portfolioprofilecrop.jpg" alt="a picture of me!" className='blob w-16 h-16 object-cover self-center aspect-square rounded-full'/>
+          <NavBar/>
+        </div>
         {children}
       </body>
     </html>
