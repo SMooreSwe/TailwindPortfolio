@@ -9,17 +9,17 @@
 }
 
 :root {
-  --background: #19c0bd;
+  --background: #03fbfc;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #19c0bd;
+    --background: ##03fbfc;
   }
 }
 
 body {
-  background: #19c0bd;
+  background: #03fbfc;
   color: #ffffff;
 }
 
