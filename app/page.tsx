@@ -11,9 +11,9 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
-    <main className='flex flex-col gap-6 content-center h-[70vh] mt-24 px-4'>
+    <main className='flex flex-col gap-6 content-center h-[70vh] mt-12 px-4'>
       <p>Hi, my name is...</p>
-      <h1 className='text-4xl text-buttons font-bold main__name'>Stephen Moore</h1>
+      <h1 className='text-3xl text-buttons font-bold main__name'>Stephen Moore</h1>
       <h3>I am a full stack JavaScript Developer. Previously a lawyer in England, I now use those problem-solving skills in the technical field.</h3>
       <div className='flex flex-col  gap-2'>
         <Link href={'/projects'}>
@@ -22,16 +22,16 @@ export default function Home() {
         <div className='social-container flex gap-2'>
           <p className='pl-2 pt-2 align-middle'>Connect on:</p>
           <Link href={'https://github.com/SMooreSwe'} target="_blank">
-            <button className='social__button flex gap-1'><img src="/icons8-github-50.png" alt="" className="w-6 h-6"/></button>
+            <button className='social__button flex gap-1'><img src="/icons8-github-50.png" alt="github" className="w-6 h-6"/></button>
           </Link>
           <Link href={'https://www.linkedin.com/in/stephen-moore-swe/'} target="_blank">
-            <button className='social__button flex gap-1'><img src="/icons8-linkedin-50.png" alt="" className="w-6 h-6"/></button>
+            <button className='social__button flex gap-1'><img src="/icons8-linkedin-50.png" alt="linkedin" className="w-6 h-6"/></button>
           </Link>
         </div>
       </div>
     </main>
-    <footer className='fixed bg-secondary w-screen h-20 bottom-0 flex flex-col items-center justify-center gap-1 pb-2'>
-      <h5 className='mx-auto mt-1'>The tools I use</h5>
+    <footer className='footer fixed bg-secondary w-screen h-48 bottom-0 flex flex-col items-center justify-center gap-1 pb-2 px-4'>
+      <h5 className='mt-1 pl-2 self-start'>My toolkit</h5>
       <div className='icon-container'>
         <div className=''><img src="/JS-icon.png" alt="JavaScript Icon" className="h-8"/></div>
         <div className=''><img src="/typescript-icon.png" alt="TypeScript Icon" className="h-8"/></div>

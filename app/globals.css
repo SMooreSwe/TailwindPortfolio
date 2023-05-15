@@ -64,12 +64,12 @@ body {
 
   .social__button {
     @apply bg-[transparent] rounded-2xl py-2 px-2 w-fit 
-    hover:bg-[#e47a9b] hover:rounded-xl 
+    hover:bg-secondary hover:rounded-xl 
     transition-all duration-200 ease-linear
   }
 
   .icon-container {
-    @apply flex justify-center content-center gap-5
+    @apply flex justify-center content-center gap-5 flex-wrap
   }
 
   .Projects__timeline-header {
@@ -102,4 +102,9 @@ body {
 
 .blob {
   border-radius: 41% 59% 69% 31% / 59% 32% 68% 41%;
+}
+
+.footer {
+  background: #209cee;
+  background: linear-gradient(0deg, #209cee 50%, #03fbfc 100%);
 }
