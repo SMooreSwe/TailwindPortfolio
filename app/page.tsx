@@ -29,7 +29,7 @@ export default function Home() {
               </div>
             </div>
     </main>
-    <footer className='fixed bg-gray-800 w-screen h-20 bottom-0 flex flex-col items-center justify-center gap-2 pb-2'>
+    <footer className='fixed bg-buttons w-screen h-20 bottom-0 flex flex-col items-center justify-center gap-2 pb-2'>
       <h5 className='mx-auto mt-1'>The tools I use</h5>
       <div className='icon-container'>
         <div className=''><img src="/JS-icon.png" alt="JavaScript Icon" className="h-8"/></div>

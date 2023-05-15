@@ -7,12 +7,12 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+    colors: {
+      'primary': '#19c0bd',
+      'secondary': '#e47a9b',
+      'buttons': '#f2532a',
+      'text': '#ffffff',
+      'transparent': 'transparent',
     },
   },
   plugins: [],
