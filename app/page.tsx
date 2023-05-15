@@ -31,7 +31,7 @@ export default function Home() {
       </div>
     </main>
     <footer className='footer fixed bg-secondary w-screen h-48 bottom-0 flex flex-col items-center justify-center gap-1 pb-2 px-4'>
-      <h5 className='mt-1 pl-2 self-start'>My toolkit</h5>
+      <h5 className='toolkit mt-1 pl-2 self-start font-extralight'>My toolkit...</h5>
       <div className='icon-container'>
         <div className=''><img src="/JS-icon.png" alt="JavaScript Icon" className="h-8"/></div>
         <div className=''><img src="/typescript-icon.png" alt="TypeScript Icon" className="h-8"/></div>

@@ -23,7 +23,7 @@ body {
   color: #ffffff;
 }
 
-.main__name {
+.main__name, .toolkit {
  font-family: Virgil, sans-serif;
 }
 .project-scroller::-webkit-scrollbar {
