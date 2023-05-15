@@ -9,17 +9,17 @@
 }
 
 :root {
-  --background: #02fcd4;
+  --background: #003432;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #02fcd4;
+    --background: #003432;
   }
 }
 
 body {
-  background: #02fcd4;
+  background: #003432;
   color: #ffffff;
 }
 
@@ -58,7 +58,7 @@ body {
 
   .main__button {
     @apply text-lg bg-buttons rounded-3xl py-2 px-6 w-fit 
-    hover:bg-[#c4320c] hover:rounded-xl 
+    hover:bg-[#ff010b] hover:rounded-xl 
     transition-all duration-200 ease-linear
   }
 
@@ -106,5 +106,5 @@ body {
 
 .footer {
   background: #209cee;
-  background: linear-gradient(0deg, #209cee 50%, #02fcd4 100%);
+  background: linear-gradient(0deg, #3c90a7 2%, #003432 60%);
 }
