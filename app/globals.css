@@ -43,9 +43,9 @@ body {
 @layer components {
   .navIcon {
     @apply relative flex items-center justify-center cursor-pointer
-    h-12 w-12 mx-auto bg-buttons
+    h-12 w-12 mx-auto bg-secondary
     rounded-3xl
-    hover:bg-secondary hover:rounded-xl
+    hover:bg-buttons hover:rounded-xl
     transition-all duration-200 ease-linear
   }
   .navIcon-tooltip {
@@ -57,14 +57,14 @@ body {
   }
 
   .main__button {
-    @apply text-lg bg-buttons rounded-2xl py-2 px-6 w-fit 
-    hover:bg-secondary hover:rounded-xl 
+    @apply text-lg bg-buttons rounded-3xl py-2 px-6 w-fit 
+    hover:bg-[#c4320c] hover:rounded-xl 
     transition-all duration-200 ease-linear
   }
 
   .social__button {
     @apply bg-[transparent] rounded-2xl py-2 px-2 w-fit 
-    hover:bg-secondary hover:rounded-xl 
+    hover:bg-buttons hover:rounded-xl 
     transition-all duration-200 ease-linear
   }
 
