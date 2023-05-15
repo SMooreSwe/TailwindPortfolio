@@ -9,17 +9,17 @@
 }
 
 :root {
-  --background: #03fbfc;
+  --background: #02fcd4;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: ##03fbfc;
+    --background: #02fcd4;
   }
 }
 
 body {
-  background: #03fbfc;
+  background: #02fcd4;
   color: #ffffff;
 }
 
@@ -106,5 +106,5 @@ body {
 
 .footer {
   background: #209cee;
-  background: linear-gradient(0deg, #209cee 50%, #03fbfc 100%);
+  background: linear-gradient(0deg, #209cee 50%, #02fcd4 100%);
 }
