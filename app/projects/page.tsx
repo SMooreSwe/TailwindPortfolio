@@ -2,17 +2,43 @@ import React from 'react'
 import TimelineSection from '../components/TimelineSection'
 import { v4 as uuidv4 } from 'uuid';
 
-const Projects = () => {
+type Project = {
+  heading: string,
+  blurb: string,
+  src: string,
+}
 
-  const projectList = ['[project Project]', 'Tech Interview Helper', 'React Gallery', 'To-Do List']
+const Projects = () => {
+  const projectList = [
+    {
+      heading: '[project Project]',
+      blurb: '',
+      src: ''
+    }, 
+    {
+      heading: 'Tech Interview Helper',
+      blurb: '',
+      src: ''
+    },
+    {
+      heading: 'React Gallery',
+      blurb: '',
+      src: ''
+    },
+    {
+      heading: 'Puppy Picker',
+      blurb: '',
+      src: ''
+    }
+  ]
 
   return (
     <>
-    <header className='max-sm:pt-[20vh] pt-[10vh] pb-[7vh] mx-12 text-6xl'>My Projects</header>
-      <div className='project-scroller mx-1 sm:mx-12'>
-        {projectList.map((project, index) => {
+    <header className='font-heading text-buttons w-fit mx-auto text-3xl mb-8'>My Projects</header>
+      <div className='project-scroller mx-auto'>
+        {projectList.map((project : Project) => {
           return (
-          <TimelineSection key={uuidv4()} name={project}/>
+          <TimelineSection key={uuidv4()} name={project.heading}/>
           )}
         )}
       </div>

@@ -49,7 +49,7 @@ body {
 
   .main__button {
     @apply text-lg bg-buttons rounded-3xl py-2 px-6 w-fit 
-    hover:bg-[#ff010b] hover:rounded-xl 
+    hover:bg-[#f47d4c] hover:rounded-xl 
     transition-all duration-200 ease-linear
   }
 
@@ -64,21 +64,29 @@ body {
   }
 
   .Projects__timeline-header {
-    @apply grid content-center justify-center text-center mb-3 text-lg
-    relative opacity-0 max-w-fit mx-auto
+    @apply grid content-center justify-center text-center mb-4 text-lg
+    relative opacity-0 max-w-fit mx-auto pl-[10%] md:pl-[12%] lg:pl-[11%]
   }
  
   .project-scroller {
-    @apply h-[75vh] snap-x snap-mandatory grid gap-10 grid-flow-col 
-    overflow-x-auto overscroll-contain auto-cols-[85%] sm:auto-cols-[90%]
+    @apply h-[75vh] w-[90%] snap-x snap-mandatory grid gap-6 grid-flow-col 
+    overflow-x-auto overscroll-contain auto-cols-[90%]
   }
 
   .project-scroller > * {
     @apply snap-start
   }
 
+  .project-scroller > :first-child > .Projects__timeline-header {
+    @apply pl-[12%] sm:pl-[13%] pr-0 md:pl-[12.5%] lg:pl-[13%]
+  }
+
+  .project-scroller > :last-child > .Projects__timeline-header {
+    @apply pl-0 pr-[16%] sm:pr-[13%] md:pr-[10%] lg:pr-[11%]
+  }
+
   .project-section__content {
-    @apply flex flex-wrap items-start gap-1 py-6 px-2 bg-[#209cee] rounded-2xl
+    @apply flex flex-wrap items-start gap-1 py-6 px-2 bg-secondary rounded-2xl
   }
 
   .project-section__content > :first-child {

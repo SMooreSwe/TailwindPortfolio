@@ -2,7 +2,6 @@
 
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { isWhiteSpaceLike } from 'typescript'
 
 type TimelineProps = {
   name: string,
@@ -22,7 +21,7 @@ const TimelineSection = (props: TimelineProps) => {
       transition: "ease-in 1s 0.5s"
       }}>{name}</h2>
     <div className='project-section__content'>
-      <img src="/project-example.jpg" alt="view of [project Project]" className='object-contain' />
+      <img src="/project-example.jpg" alt="view of [project Project]" className='object-scale-down' />
       <aside>This is the text that describes the site</aside>
     </div>
       

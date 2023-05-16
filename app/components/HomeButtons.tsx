@@ -12,7 +12,7 @@ const HomeButtons = () => {
             className='flex flex-col gap-2 overflow-hidden'
             initial={{scale: 0, opacity: 0}}
             animate={{scale: 1, opacity: 1}}
-            transition={{delay: 1.5}}
+            transition={{delay: 1.6}}
         >
         <Link href={'/projects'}>
         <button className='main__button flex gap-1 mx-auto'><FontAwesomeIcon icon={faRectangleList} className="w-4 h-4 mt-[0.38rem]" />See my Projects</button>
