@@ -1,6 +1,8 @@
 import NavBar from './components/NavBar'
 import './globals.css'
 import { Inter, Kaushan_Script } from 'next/font/google'
+import { motion } from 'framer-motion'
+import Logo from './components/Logo'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,7 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} ${Kaushan.variable}`}>
         <div className="flex justify-between pl-4 w-screen">
-          <img src="/portfolioprofilecrop.jpg" alt="a picture of me!" className='blob mt-2 w-20 h-20 object-cover self-center aspect-square border-solid border-4 border-secondary'/>
+          <Logo/>
           <NavBar/>
         </div>
         {children}

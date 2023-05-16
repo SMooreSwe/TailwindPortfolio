@@ -10,10 +10,10 @@ const Typing = () => {
             'I used to be a Lawyer.',
             1000,
             'I am now a Full Stack Developer.',
-            1000,
+            2000,
         ]}
-        speed={40}
-        deletionSpeed={90}
+        speed={30}
+        deletionSpeed={80}
         className='text-md mx-auto'
         repeat={Infinity}/>
   )
