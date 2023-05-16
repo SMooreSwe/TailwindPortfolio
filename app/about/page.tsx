@@ -1,9 +1,10 @@
 import React from 'react'
+import PageHeader from '../components/PageHeader'
 
 const About = () => {
   return (
     <>
-    <h2 className='font-heading w-fit mx-auto text-3xl'>About Me</h2>
+    <PageHeader message={'About Me'}/>
     </>
   )
 }

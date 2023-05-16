@@ -18,9 +18,9 @@ const TimelineSection = (props: TimelineProps) => {
     <AnimatePresence>
       <motion.section 
         className='project-section'
-        initial={{scale: 0, opacity: 0}}
-        animate={{scale: 1, opacity: 1}}
-        transition={{duration: 1}}
+        initial={{opacity: 0, x: '-100vh'}}
+        animate={{ opacity: 1, x: '0'}}
+        transition={{delay: 0.3, duration: 1}}
       >
         <h2 className="Projects__timeline-header" ref={ref} style={{
         transform: isInView ? "none" : "translateY(-100%)",
