@@ -23,7 +23,7 @@ const TimelineSection = (props: TimelineProps) => {
       }}>{name}</h2>
     <div className='project-section__content'>
       <img src="/project-example.jpg" alt="view of [project Project]" className='object-contain' />
-      <aside className='pl-[2.5%] xl:pl-0'>{blurb}</aside>
+      <aside className='lg:my-auto lg:text-lg xl:text-xl'>{blurb}</aside>
     </div>
       
     </section>
