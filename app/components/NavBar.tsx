@@ -13,7 +13,7 @@ const NavBar = () => {
         animate={{scale: 1, opacity: 1, y: '0'}}
         transition={{duration: 0.7}}
         className="bg-secondary w-[90%] m-6 md:mt-10 lg:mt-12 me-4 pr-2 h-8 rounded-2xl z-50 flex content-center justify-end shadow">
-        <ul className="flex gap-2 mt-[-8px]">
+        <ul className="flex gap-2 mt-[-8px] lg:mt-[-16px]">
             <NavLink route={'/'} icon={faHome} text={'Home'}/>
             <NavLink route={'/projects'} icon={faRectangleList} text={'My Projects'}/>
             <NavLink route={'/about'} icon={faInfoCircle} text={'About Me'}/>
