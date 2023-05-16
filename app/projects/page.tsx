@@ -2,6 +2,7 @@ import React from 'react'
 import TimelineSection from '../components/TimelineSection'
 import { v4 as uuidv4 } from 'uuid';
 import Footer from '../components/Footer';
+import PageHeader from '../components/PageHeader';
 
 type Project = {
   heading: string,
@@ -40,7 +41,7 @@ const Projects = () => {
 
   return (
     <>
-    <header className='font-heading text-buttons w-fit mx-auto text-3xl md:text-4xl lg:text-6xl mt-[3vh] lg:mt-6 mb-[5vh] lg:mb-10'>My Projects</header>
+    <PageHeader message={'My Projects'}/>
       <div className='project-scroller mx-auto'>
         {projectList.map((project : Project) => {
           return (
