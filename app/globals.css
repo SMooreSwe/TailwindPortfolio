@@ -89,9 +89,7 @@ body {
     @apply basis-[270px] grow
   }  
 
-  .footer > * {
-    @apply opacity-70
-  }
+ 
 }
 
 

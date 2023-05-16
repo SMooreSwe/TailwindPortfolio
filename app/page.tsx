@@ -12,14 +12,14 @@ export default function Home() {
   return (
     <>
     <main className='flex flex-col gap-6 content-center h-[70vh] mt-12 px-4'>
-      <p className='pl-1'>Hi, my name is...</p>
+      <p className='pl-1 mb-[6%]'>Hi, my name is...</p>
       <h1 className='font-heading text-4xl text-buttons font-bold main__name mx-auto'>Stephen Moore</h1>
       <Typing/>
       <div className='flex flex-col gap-2'>
         <Link href={'/projects'}>
           <button className='main__button flex gap-1 mx-auto'><FontAwesomeIcon icon={faRectangleList} className="w-4 h-4 mt-[0.38rem]" />See my Projects</button>
         </Link>
-        <div className='social-container mt-6'>
+        <div className='social-container mt-[4%]'>
           <p className='w-fit mx-auto pt-2 align-middle'>Connect on:</p>
           <div className='flex gap-2 mt-2 justify-center'>
             <Link href={'https://github.com/SMooreSwe'} target="_blank">
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </div>
     </main>
-    <footer className='footer fixed bg-secondary w-screen h-48 md:h-20 bottom-0 flex flex-col items-center justify-center gap-1 pb-2 px-4'>
+    <footer className='footer fixed bg-secondary w-screen h-48 md:h-24 bottom-0 flex flex-col items-center justify-center gap-1 pb-2 px-4'>
       <h5 className='font-heading mt-1 pl-2 self-start font-extralight'>My toolkit...</h5>
       <div className='icon-container'>
         <div className=''><img src="/JS-icon.png" alt="JavaScript Icon" className="h-8"/></div>
