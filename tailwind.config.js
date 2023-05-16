@@ -7,6 +7,11 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
+    extend: {
+      fontFamily: {
+        heading: ['var(--font-kaushan)']
+      }
+    },
     colors: {
       'primary': '#02fcd4',
       'secondary': '#3c90a7',
