@@ -10,7 +10,7 @@ const Typing = () => {
             'I used to be a Lawyer.',
             1000,
             'I am now a Full Stack Developer.',
-            2000,
+            2500,
         ]}
         speed={30}
         deletionSpeed={80}
