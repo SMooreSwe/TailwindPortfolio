@@ -88,6 +88,10 @@ body {
   .project-section__content > :last-child {
     @apply basis-[270px] grow
   }  
+
+  .footer > * {
+    @apply opacity-70
+  }
 }
 
 
@@ -97,5 +101,5 @@ body {
 
 .footer {
   background: #209cee;
-  background: linear-gradient(0deg, #3c90a7 2%, #003432 60%);
+  background: linear-gradient(0deg, #3c90a7 2%, #003432 66%);
 }
