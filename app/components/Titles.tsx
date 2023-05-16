@@ -11,7 +11,7 @@ const Titles = () => {
             initial={{scale: 0, opacity: 0, x: '-20vw', display: 'none'}}
             animate={{scale: 1, opacity: 1, x: '0'}}
             transition={{delay: 0.3}}
-            className='pl-[5%] md:pl-[8%] lg:pl-[12%] mb-[6%]'>
+            className='pl-[5%] md:pl-[8%] lg:pl-[20%] lg:mt-12 mb-[6%] lg:mb-4'>
                 <MyNameIs/>
         </motion.div>
         <motion.h1 
