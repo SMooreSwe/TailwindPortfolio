@@ -12,7 +12,7 @@ const Projects = () => {
   const projectList = [
     {
       heading: '[project Project]',
-      blurb: '',
+      blurb: '[project Project] is a collaborative and interactive project management application. It was ideated in two hours, planned in a day, then developed within the span of 11 days by four full-stack Javascript students as part of the winter 2023 class from the School of Applied Learning and Technology, aka </Salt>.',
       src: ''
     }, 
     {
@@ -38,7 +38,7 @@ const Projects = () => {
       <div className='project-scroller mx-auto'>
         {projectList.map((project : Project) => {
           return (
-          <TimelineSection key={uuidv4()} name={project.heading}/>
+          <TimelineSection key={uuidv4()} name={project.heading} blurb={project.blurb}/>
           )}
         )}
       </div>

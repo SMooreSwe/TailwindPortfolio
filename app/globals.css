@@ -90,11 +90,11 @@ body {
   }
 
   .project-section__content > :first-child {
-    @apply lg:max-h-72 xl:max-h-[500px] basis-[500px] grow-[9999]
+    @apply lg:max-h-72 xl:max-h-[390px] basis-[390px] grow-[9999]
   }
 
   .project-section__content > :last-child {
-    @apply basis-[270px] grow
+    @apply basis-[290px] grow
   }  
 
  

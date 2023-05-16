@@ -5,11 +5,12 @@ import { useRef } from 'react'
 
 type TimelineProps = {
   name: string,
+  blurb: string,
   key: string,
 }
 
 const TimelineSection = (props: TimelineProps) => {
-  const { name } = props
+  const { name, blurb } = props
   const ref = useRef(null)
   const isInView = useInView(ref, {once: true})
 
@@ -21,8 +22,8 @@ const TimelineSection = (props: TimelineProps) => {
       transition: "ease-in 1s 0.5s"
       }}>{name}</h2>
     <div className='project-section__content'>
-      <img src="/project-example.jpg" alt="view of [project Project]" className='object-scale-down' />
-      <aside>This is the text that describes the site</aside>
+      <img src="/project-example.jpg" alt="view of [project Project]" className='object-contain' />
+      <aside className='pl-[2.5%] xl:pl-0'>{blurb}</aside>
     </div>
       
     </section>

@@ -1,10 +1,9 @@
 import React from 'react'
-import NavBar from '../components/NavBar'
 
 const About = () => {
   return (
     <>
-    <div>About</div>
+    <h2 className='font-heading w-fit mx-auto text-3xl'>About Me</h2>
     </>
   )
 }
