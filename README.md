@@ -33,4 +33,4 @@ Whilst an animation library could have been used for the project scrolling, I wa
 Whilst the site itself is complete, I have been considering the addition of a contact form, in addition to the existing social links. I am also open to further ideas.
 
 ## Tools
-This is a [Next.js](https://nextjs.org/) project. It utilises Tailwind CSS (including tailwind classes using @apply) and animations used the Framer-Motion library, as well as the React-TypingAnimation Library. 
+This is a [Next.js](https://nextjs.org/) project. It utilises Tailwind CSS (including tailwind classes using @apply) and animations used the Framer-Motion library, as well as the React-TypingAnimation Library. Icons were added via FontAwesome.
