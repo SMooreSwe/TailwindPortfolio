@@ -1,10 +1,9 @@
 'use client'
+import { HeaderProps } from '@/types'
 import { AnimatePresence, motion } from 'framer-motion'
 import React from 'react'
 
-type HeaderProps = {
-    message: string
-}
+
 
 const PageHeader = ({ message } : HeaderProps) => {
   return (
