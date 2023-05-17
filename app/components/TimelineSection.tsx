@@ -6,14 +6,15 @@ import { useRef } from 'react'
 type TimelineProps = {
   name: string,
   blurb: string,
+  src: string,
   key: string,
 }
 
 const TimelineSection = (props: TimelineProps) => {
-  const { name, blurb } = props
+  const { name, blurb, src } = props
   const ref = useRef(null)
   const isInView = useInView(ref, {once: true})
-
+  
   return (
     <AnimatePresence>
       <motion.section 
@@ -29,7 +30,7 @@ const TimelineSection = (props: TimelineProps) => {
         transition: "ease-in 1s 0.5s"
         }}>{name}</h2>
       <div className='project-section__content'>
-        <img src="/project-example.jpg" alt="view of [project Project]" className='object-contain' />
+        <img src={src} alt={`view of ${name}`} className='object-contain' />
         <aside className='lg:my-auto lg:text-lg xl:text-xl'>{blurb}</aside>
       </div>
       </motion.section>
