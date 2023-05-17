@@ -1,5 +1,9 @@
 # Personal Portfolio Site
 
+<div align=center>
+ <img src="public/loadUpGIF.gif"/>
+</div>
+
 This is a SPA portfolio website, built with React. It is animated and fully responsive. The finished product is deployed [here](https://next-portfolio-cyan-nine.vercel.app/). It was built to showcase both past projects and previous skills. I have built it to be easily scalable and easily-updated by utilising reusable components and dynamically generating project slides. This means future projects can easily be added via a  simple JSON and a picture.
 
 TypeScript was used to ensure type-safety. 
@@ -7,6 +11,14 @@ TypeScript was used to ensure type-safety.
 ## Responsive Design
 
 The design was produced with a mobile-first approach, with breakpoints used to ensure the best layouts for different devices, though relative units and responsive design choices meant that media queries were not required for every change. examples of the homepage on mobile and fullscreen are below.
+
+<div align=center>
+ <img src="public/phoneProjects.jpg"/>
+</div>
+
+<div align=center>
+ <img src="public/fullscreenProjects.jpg"/>
+</div>
 
 ## Tailwind
 
