@@ -1,10 +1,12 @@
 import NavBar from './components/NavBar'
 import './globals.css'
-import { Inter, Kaushan_Script } from 'next/font/google'
-import { motion } from 'framer-motion'
+import { Kaushan_Script, Roboto } from 'next/font/google'
 import Logo from './components/Logo'
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({ 
+  weight: ['400'],
+  subsets: ['latin'],
+})
 
 const Kaushan = Kaushan_Script({
   weight: ['400'],
@@ -27,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${Kaushan.variable}`}>
+      <body className={`${roboto.className} ${Kaushan.variable}`}>
         <div className="flex justify-between pl-4 w-screen">
           <Logo/>
           <NavBar/>
