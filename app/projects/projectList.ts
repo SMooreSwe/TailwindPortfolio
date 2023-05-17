@@ -1,5 +1,5 @@
 import { Project } from "@/types";
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faCode, faGlobe } from '@fortawesome/free-solid-svg-icons'
 
 export const projectList : Project[] = [
     {
@@ -8,14 +8,14 @@ export const projectList : Project[] = [
       src: '/projectGIF.gif',
       links: [
         {
-          text: 'The site',
+          text: 'Visit the site',
           href: 'https://project-project-nine.vercel.app/',
-          icon: faMagnifyingGlass,
+          icon: faGlobe,
         },
         {
-            text: 'The Code',
+            text: 'See the Code',
             href: 'https://github.com/SMooreSwe/projectProject',
-            icon: faMagnifyingGlass,
+            icon: faCode,
         },
       ]
     }, 
@@ -25,9 +25,9 @@ export const projectList : Project[] = [
       src: '/techGif.gif',
       links: [
         {
-          text: 'The Code',
+          text: 'See the Code',
           href: 'https://github.com/SMooreSwe/techInterviewHelper',
-          icon: faMagnifyingGlass,
+          icon: faCode,
         }
       ]
     },
@@ -37,9 +37,9 @@ export const projectList : Project[] = [
       src: '/galleryGIF.gif',
       links: [
         {
-          text: 'The Code',
+          text: 'See the Code',
           href: 'https://github.com/SMooreSwe/react-gallery',
-          icon: faMagnifyingGlass,
+          icon: faCode,
         }
       ]
     },
@@ -49,9 +49,9 @@ export const projectList : Project[] = [
       src: '/puppiesGIF.gif',
       links: [
         {
-          text: 'The Code',
+          text: 'See the Code',
           href: 'https://github.com/SMooreSwe/puppies-frontend',
-          icon: faMagnifyingGlass,
+          icon: faCode,
         }
       ]
     }

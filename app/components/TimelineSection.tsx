@@ -35,7 +35,7 @@ const TimelineSection = ({ name, blurb, src, links }: TimelineProps) => {
             {links && links.map(link => {
               return(
                 <Link href={link.href} key={uuidv4()} target="_blank">
-                  <button className='main__button flex gap-1 mx-auto text-sm'><FontAwesomeIcon icon={link.icon} className="w-[0.7rem] h-[0.7rem] mt-[0.2rem]" />{link.text}</button>
+                  <button className='main__button flex flex-col content-center sm:flex-row gap-1 mx-auto text-xs sm:text-sm'><FontAwesomeIcon icon={link.icon} className="mx-auto w-[0.9rem] h-[0.9rem] mt-[0.2rem]" />{link.text}</button>
                 </Link>
               )})}
           </div>
