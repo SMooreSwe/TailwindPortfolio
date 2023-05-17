@@ -1,9 +1,10 @@
 'use client'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { IconDefinition, faHome, faInfoCircle, faRectangleList} from '@fortawesome/free-solid-svg-icons'
+import { faHome, faInfoCircle, faRectangleList} from '@fortawesome/free-solid-svg-icons'
 import { useRouter } from 'next/navigation'
 import { AnimatePresence, motion } from 'framer-motion'
+import { navLinkProps } from '@/types'
 
 const NavBar = () => {
   return (
@@ -23,17 +24,12 @@ const NavBar = () => {
   )
 }
 
-type navLinkProps = {
-    route: string,
-    icon: IconDefinition,
-    text: string
-}
-const NavLink = (props: navLinkProps) => {
-    const {route, icon, text} = props
+const NavLink = ({route, icon, text}: navLinkProps) => {
     const router = useRouter();
+    
     return(
     <>
-    <li className='navIcon group' onClick={()=> router.push(route)}>
+    <li className='navIcon group' onClick={()=> router.push(route)} onTouchEnd={(e) => e.currentTarget.blur()}>
         <FontAwesomeIcon icon={icon} className="w-6 h-6" />
         <span className="navIcon-tooltip group-hover:scale-100">{text}</span>
     </li>

@@ -2,33 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #003432;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #003432;
-  }
-}
-
 body {
   background: #003432;
   color: #ffffff;
-}
-
-.project-scroller::-webkit-scrollbar {
-  width: 20px
-}
-
-.project-scroller::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-
-
-.project-scroller::-webkit-scrollbar-thumb {
-  background: rgba(31, 41, 55, 0.6);
-  border-radius: 10px;
 }
 
 @layer components {
@@ -98,12 +74,15 @@ body {
   }  
 }
 
+.project-scroller::-webkit-scrollbar {
+  width: 0px
+}
 
 .blob {
   border-radius: 41% 59% 69% 31% / 59% 32% 68% 41%;
 }
 
 .footer {
-  background: #209cee;
   background: linear-gradient(0deg, #3c90a7 2%, #003432 66%);
 }
+
