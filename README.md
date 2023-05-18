@@ -4,6 +4,8 @@
  <img src="public/loadUpGIF.gif"/>
 </div>
 
+---
+
 This is a SPA portfolio website, built with React. It is animated and fully responsive. The finished product is deployed [here](https://next-portfolio-cyan-nine.vercel.app/). It was built to showcase both past projects and previous skills. I have built it to be easily scalable and easily-updated by utilising reusable components and dynamically generating project slides. This means future projects can easily be added via a  simple JSON and a picture.
 
 TypeScript was used to ensure type-safety. 
@@ -15,6 +17,8 @@ The design was produced with a mobile-first approach, with breakpoints used to e
 <div align=center>
  <img src="public/phoneProjects.jpg"/>
 </div>
+
+---
 
 <div align=center>
  <img src="public/fullscreenProjects.jpg"/>
