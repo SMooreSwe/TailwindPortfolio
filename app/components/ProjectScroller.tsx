@@ -6,20 +6,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useRef } from 'react'
 import { projectList } from '../projects/projectList'
 import TimelineSection from './TimelineSection'
+import { listLength } from '../projects/projectList';
 
 const ProjectScroller = () => {
     const scroller = useRef<HTMLDivElement>(null)
     
     const handleLeftClick = () => {
         const width = scroller.current?.offsetWidth
-        const click = width!*0.25
+        const click = width!/listLength
         const back = 0 - click
         scroller.current!.scrollBy({left: back, behavior: 'smooth'})
     }
   
     const handleRightClick = () => {
         const width = scroller.current?.offsetWidth
-        const click = width!*0.25
+        const click = width!/listLength
         scroller.current!.scrollBy({left: click, behavior: 'smooth'})
     }
   
