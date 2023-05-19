@@ -9,16 +9,18 @@ import TimelineSection from './TimelineSection'
 
 const ProjectScroller = () => {
     const scroller = useRef<HTMLDivElement>(null)
-    const width = scroller.current?.offsetWidth
-    const click = width!*0.25
     
     const handleLeftClick = () => {
+        const width = scroller.current?.offsetWidth
+        const click = width!*0.25
         const back = 0 - click
-        scroller.current?.scrollBy({left: back, behavior: 'smooth'})
+        scroller.current!.scrollBy({left: back, behavior: 'smooth'})
     }
   
     const handleRightClick = () => {
-        scroller.current?.scrollBy({left: click, behavior: 'smooth'})
+        const width = scroller.current?.offsetWidth
+        const click = width!*0.25
+        scroller.current!.scrollBy({left: click, behavior: 'smooth'})
     }
   
   return (
