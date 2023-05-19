@@ -23,7 +23,7 @@ const ProjectScroller = () => {
   
   return (
     <>
-        <button className='hidden sm:block fixed left-2 md:left-6 top-[55%] z-10'>
+        <button className='hidden md:block fixed left-2 lg:left-6 top-[55%] z-10'>
             <FontAwesomeIcon icon={faArrowLeft} className="w-6 h-6" onClick={handleLeftClick}/>
         </button>
         <div ref={scroller} className='project-scroller mx-auto'>
@@ -33,7 +33,7 @@ const ProjectScroller = () => {
             )}
             )}
         </div>
-        <button className='hidden sm:block fixed right-2 md:right-6 top-[55%] z-10' onClick={handleRightClick}>
+        <button className='hidden md:block fixed right-2 lg:right-6 top-[55%] z-10' onClick={handleRightClick}>
             <FontAwesomeIcon icon={faArrowRight} className="w-6 h-6"/>
         </button>
     </>
