@@ -12,16 +12,17 @@ const ProjectScroller = () => {
     const scroller = useRef<HTMLDivElement>(null)
     
     const handleLeftClick = () => {
-        const width = scroller.current?.offsetWidth
+        const width = scroller.current?.scrollWidth
         const click = width!/listLength
         const back = 0 - click
         scroller.current!.scrollBy({left: back, behavior: 'smooth'})
     }
   
     const handleRightClick = () => {
-        const width = scroller.current?.offsetWidth
+        const width = scroller.current?.scrollWidth
         const click = width!/listLength
         scroller.current!.scrollBy({left: click, behavior: 'smooth'})
+        console.log(width, listLength)
     }
   
   return (

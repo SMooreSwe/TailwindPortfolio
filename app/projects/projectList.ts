@@ -32,6 +32,18 @@ export const projectList : Project[] = [
     ]
   },
   {
+    heading: 'Tiny Blog',
+    blurb: 'This project was built to work on my TypeScript skills, as well as continue practice of React functionality. I utilised CSS and attribute selectors to target state changes in the displayed topics, to allow for the accordion effect.',
+    src: '/blogGif.gif',
+    links: [
+      {
+        text: 'See the Code',
+        href: 'https://github.com/SMooreSwe/tiny-blog',
+        icon: faCode,
+      }
+    ]
+  },
+  {
     heading: 'React Gallery',
     blurb: 'A mob-programming exercise. It was built using Create-React-App, with the typescript template. Images are retrieved using the Unsplash API. Routing was done using both React Router and by passing "state" information through the React Router Links, to allow for dynamic page generation.',
     src: '/galleryGIF.gif',
