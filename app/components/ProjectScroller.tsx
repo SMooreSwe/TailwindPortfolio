@@ -22,7 +22,6 @@ const ProjectScroller = () => {
         const width = scroller.current?.scrollWidth
         const click = width!/listLength
         scroller.current!.scrollBy({left: click, behavior: 'smooth'})
-        console.log(width, listLength)
     }
   
   return (
