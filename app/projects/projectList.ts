@@ -37,10 +37,15 @@ export const projectList : Project[] = [
     src: '/blogGif.gif',
     links: [
       {
+        text: 'Visit the site',
+        href: 'https://tiny-blog-sigma.vercel.app/',
+        icon: faGlobe,
+      },
+      {
         text: 'See the Code',
         href: 'https://github.com/SMooreSwe/tiny-blog',
         icon: faCode,
-      }
+      },
     ]
   },
   {
