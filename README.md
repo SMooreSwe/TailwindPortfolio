@@ -30,7 +30,7 @@ This Project was build with Tailwind CSS. I had not used it prior to starting th
 
 ## Project Scroller
 
-Whilst an animation library could have been used for the project scrolling, I wanted to use CSS to really test my design, as well as my new Tailwind CSS skills. 
+Whilst an animation library could have been used for the project scrolling, I wanted to use CSS to really test my design, as well as my new Tailwind CSS skills. This also ensures that I am able to keep much of the content as server-side components, improving load times.
 
 ## Next Steps
 
