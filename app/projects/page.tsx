@@ -7,8 +7,10 @@ import ProjectScroller from '../components/ProjectScroller';
 const Projects = () => {
   return (
     <>
-    <PageHeader message={'My Projects'}/>
-      <ProjectScroller/>
+      <div className='sm:pb-32 md:pb-24'>
+        <PageHeader message={'My Projects'}/>
+          <ProjectScroller/>
+      </div>
       <div className='hidden sm:block'>
         <Footer/>
       </div>

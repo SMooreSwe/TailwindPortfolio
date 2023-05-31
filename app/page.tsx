@@ -12,7 +12,7 @@ import HomeButtons from './components/HomeButtons'
 export default function Home() {
   return (
     <>
-    <main className='flex flex-col gap-6 content-center h-[70vh] mt-12 px-4'>
+    <main className='flex flex-col gap-6 content-center sm:pb-32 md:pb-24 mt-12 px-4'>
       <Titles/>
       <HomeButtons/>
     </main>
