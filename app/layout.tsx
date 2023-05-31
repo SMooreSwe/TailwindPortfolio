@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`relative min-h-[100vh] ${roboto.className} ${Kaushan.variable} overflow-x-hidden`}>
+      <body className={`relative min-h-[100svh] ${roboto.className} ${Kaushan.variable} overflow-x-hidden`}>
         <div className="flex justify-between pl-4 w-screen">
           <Logo/>
           <NavBar/>
