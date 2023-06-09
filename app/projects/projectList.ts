@@ -62,7 +62,7 @@ export const projectList : Project[] = [
   },
   {
     heading: 'Puppy Picker',
-    blurb: 'This mobile-responsive, full stack App consists of a React UI built using NextJS, a RESTful Express API and a MongoDB database. Pictures for each puppy are obtained from the Unsplash API and relate to the selected dog\'s breed. The UI allows users easy access to CRUD functionality.',
+    blurb: 'This mobile-responsive, full stack App consists of a React UI built using NextJS, a RESTful C# API and a Azure SQL database. Pictures for each puppy are obtained from the Unsplash API and relate to the selected dog\'s breed. The UI allows users easy access to CRUD functionality.',
     src: '/puppiesGIF.gif',
     links: [
       {
