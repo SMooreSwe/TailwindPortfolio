@@ -66,6 +66,11 @@ export const projectList : Project[] = [
     src: '/puppiesGIF.gif',
     links: [
       {
+        text: 'Visit the site',
+        href: 'https://puppypicker.vercel.app/',
+        icon: faGlobe,
+      },
+      {
         text: 'See the Code',
         href: 'https://github.com/SMooreSwe/puppies-frontend',
         icon: faCode,
