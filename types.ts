@@ -1,6 +1,6 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core"
 
-type Button = {
+export type Button = {
     text: string,
     href: string,
     icon: IconDefinition,
@@ -9,7 +9,8 @@ type Button = {
 export type Project = {
     heading: string,
     blurb: string,
-    links: Button[]
+    deployed?: string,
+    github?: string,
     src: string,
 }
 
@@ -18,7 +19,7 @@ export type TimelineProps = {
     blurb: string,
     src: string,
     key: string,
-    links: Button[]
+    links: (Button | null)[];
 }
 
 export type HeaderProps = {

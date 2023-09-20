@@ -33,14 +33,18 @@ const TimelineSection = ({ name, blurb, src, links }: TimelineProps) => {
           <aside className='text-sm lg:text-lg xl:text-xl'>{blurb}</aside>
           <div className='flex justify-center gap-2'>
             {links && links.map(link => {
-              return(
-                <Link href={link.href} key={uuidv4()} target="_blank">
-                  <button className='main__button flex flex-col content-center sm:flex-row gap-1 mx-auto text-xs sm:text-sm'>
-                    <FontAwesomeIcon icon={link.icon} className="mx-auto w-[0.9rem] h-[0.9rem] mt-[0.2rem]" />
-                    {link.text}
-                  </button>
-                </Link>
-              )})}
+              if(link != null)
+              {
+                return(
+                  <Link href={link.href} key={uuidv4()} target="_blank">
+                    <button className='main__button flex flex-col content-center sm:flex-row gap-1 mx-auto text-xs sm:text-sm'>
+                      <FontAwesomeIcon icon={link.icon} className="mx-auto w-[0.9rem] h-[0.9rem] mt-[0.2rem]" />
+                      {link.text}
+                    </button>
+                  </Link>
+                )
+              }
+              })}
           </div>
         </div>
       </div>
