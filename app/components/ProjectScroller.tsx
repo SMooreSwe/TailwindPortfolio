@@ -1,54 +1,21 @@
 'use client'
-import { Project, Button } from '@/types'
+import { Project } from '@/types'
 import { v4 as uuidv4 } from 'uuid';
-import { faArrowLeft, faArrowRight, faCode, faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useEffect, useRef, useState } from 'react'
-import axios from 'axios';
 import TimelineSection from './TimelineSection'
+import { fetchProjects } from '../utils/calls';
+import { buttonMaker } from '../utils/functions';
 
 
 const ProjectScroller = () => {
     const [projects, setProjects] = useState<Project[]>([]);
 
-    const fetchProjects = async () => {
-        const query = {
-            "operationName": "AllProjects",
-            "query": `query AllProjects { 
-                projects {
-                    blurb
-                    heading
-                    src
-                    deployed
-                    github
-                }
-            }`,
-            "variables": {}
-        };
-        const response = await axios({
-            url: `http://localhost:4000/`, 
-            method: 'post',
-            headers: { "content-type": "application/json"},
-            data: query
-        })
-        return response.data;
-    };
-
     useEffect(()=> {
         fetchProjects().then(response => setProjects(response.data.projects));
     }, []);
 
-    const buttonMaker = (role: string, href?: string) => {
-        if(href){
-            const button : Button = {
-                text: role == 'deployed' ? 'Visit the site' : 'See the Code',
-                href: href,
-                icon: role == 'deployed' ? faGlobe : faCode
-            }
-            return button;
-        }
-        return null;
-    }
     const scroller = useRef<HTMLDivElement>(null)
     
     const handleLeftClick = () => {
@@ -70,8 +37,9 @@ const ProjectScroller = () => {
         </button>
         <div ref={scroller} className='project-scroller mx-auto'>
             {projects.length && projects.map((project : Project) => {
+            const buttonLinks = [buttonMaker('deployed', project.deployed,), buttonMaker('github', project.github)]
             return (
-            <TimelineSection key={uuidv4()} name={project.heading} blurb={project.blurb} src={project.src} links={[buttonMaker('deployed', project.deployed,), buttonMaker('github', project.github)]}/>
+            <TimelineSection key={uuidv4()} name={project.heading} blurb={project.blurb} src={project.src} links={buttonLinks}/>
             )}
             )}
         </div>
