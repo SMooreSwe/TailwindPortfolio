@@ -15,7 +15,7 @@ export const fetchProjects = async () => {
         "variables": {}
     };
     const response = await axios({
-        url: `http://localhost:4000/`, 
+        url: process.env.NEXT_PUBLIC_BE_URL, 
         method: 'post',
         headers: { "content-type": "application/json"},
         data: query

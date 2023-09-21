@@ -36,7 +36,7 @@ const ProjectScroller = () => {
             <FontAwesomeIcon icon={faArrowLeft} className="w-6 h-6" onClick={handleLeftClick}/>
         </button>
         <div ref={scroller} className='project-scroller mx-auto'>
-            {projects.length && projects.map((project : Project) => {
+            {projects.length != 0 && projects.map((project : Project) => {
             const buttonLinks = [buttonMaker('deployed', project.deployed,), buttonMaker('github', project.github)]
             return (
             <TimelineSection key={uuidv4()} name={project.heading} blurb={project.blurb} src={project.src} links={buttonLinks}/>
