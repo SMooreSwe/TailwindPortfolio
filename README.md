@@ -6,7 +6,7 @@
 
 ---
 
-This is a SPA portfolio website, built with React. It is animated and fully responsive. The finished product is deployed [here](https://next-portfolio-cyan-nine.vercel.app/). It was built to showcase both past projects and previous skills. I have built it to be easily scalable and easily-updated by utilising reusable components and dynamically generating project slides. This means future projects can easily be added via a  simple JSON and a picture.
+This is a SPA portfolio website, built with React. It is animated and fully responsive. The finished product is deployed [here](https://next-portfolio-cyan-nine.vercel.app/). It was built to showcase both past projects and previous skills. I have built it to be easily scalable and easily-updated by utilising reusable components and dynamically generating project slides. 
 
 TypeScript was used to ensure type-safety. 
 
@@ -31,6 +31,10 @@ This Project was build with Tailwind CSS. I had not used it prior to starting th
 ## Project Scroller
 
 Whilst an animation library could have been used for the project scrolling, I wanted to use CSS to really test my design, as well as my new Tailwind CSS skills. This also ensures that I am able to keep much of the content as server-side components, improving load times.
+
+## Backend
+
+To refresh my skills with GraphQL, I recently added a GraphQL backend, which can be seen [here](https://github.com/SMooreSwe/portfoliobackend). The server is now deployed at render.com and connects to a PostgreSQL database, hosted on supabase.com. The frontend code has been amended to display projects from this server. This means that further projects added to the database will programatically expand the project scroller and generate their own slide. I can distinguish between projects that are and are not deployed and the project displays buttons to the relevant links reflecting this.
 
 ## Next Steps
 
