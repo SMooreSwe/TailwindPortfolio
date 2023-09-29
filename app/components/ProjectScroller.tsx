@@ -1,6 +1,5 @@
 'use client'
 import { Project } from '@/types'
-import { projectList } from '../projects/projectList';
 import { v4 as uuidv4 } from 'uuid';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,7 +10,7 @@ import { buttonMaker } from '../utils/functions';
 
 
 const ProjectScroller = () => {
-    const [projects, setProjects] = useState<Project[]>(projectList);
+    const [projects, setProjects] = useState<Project[]>([]);
 
     useEffect(()=> {
         fetchProjects().then(response => setProjects(response.data.projects));
