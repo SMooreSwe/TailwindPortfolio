@@ -13,9 +13,9 @@ import { buttonMaker } from '../utils/functions';
 const ProjectScroller = () => {
     const [projects, setProjects] = useState<Project[]>(projectList);
 
-    // useEffect(()=> {
-    //     fetchProjects().then(response => setProjects(response.data.projects));
-    // }, []);
+    useEffect(()=> {
+        fetchProjects().then(response => setProjects(response.data.projects));
+    }, []);
 
     const scroller = useRef<HTMLDivElement>(null)
     
