@@ -1,7 +1,13 @@
 import { Project } from "@/types";
-import { faCode, faGlobe } from '@fortawesome/free-solid-svg-icons'
 
 export const projectList : Project[] = [
+  {
+    heading: 'TalentHub',
+    blurb: 'TalentHub is a project built as part of a mob. It is designed to make it easier to match developers and jobs. The frontend is built in React (Vite) and the backend is in C# using ASP.Net core. Authorization is done via JWT and Auth0. User management uses the Auth0 management API',
+    src: '/jobtech.gif',
+    deployed: 'https://job-matches.vercel.app/',
+    github: 'https://github.com/lups-tech',
+  }, 
   {
     heading: '[project Project]',
     blurb: '[project Project] is a mobile-responsive, collaborative project management application. It was ideated in two hours, planned in a day, then developed within the span of 11 days by a single mob as part of the winter 2023 class from the School of Applied Learning and Technology, aka </Salt>.',
