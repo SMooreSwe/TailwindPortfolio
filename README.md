@@ -34,7 +34,9 @@ Whilst an animation library could have been used for the project scrolling, I wa
 
 ## Backend
 
-To refresh my skills with GraphQL, I recently added a GraphQL backend, which can be seen [here](https://github.com/SMooreSwe/portfoliobackend). The server is now deployed at render.com and connects to a PostgreSQL database, hosted on supabase.com. The frontend code has been amended to display projects from this server. This means that further projects added to the database will programatically expand the project scroller and generate their own slide. I can distinguish between projects that are and are not deployed and the project displays buttons to the relevant links reflecting this.
+To refresh my skills with GraphQL, I recently added a GraphQL backend, which can be seen [here](https://github.com/SMooreSwe/portfoliobackend). The server was deployed at render.com and connected to a PostgreSQL database, hosted on supabase.com, due to provisioning, the data is now stored locally and the slides programatically generated, along with the correct buttons, as required for each project. 
+
+In an earlier deployment the frontend code has been amended to display projects from this server. This means that further projects added to the database would programatically expand the project scroller and generate their own slide. As is currently in place, this could distinguish between projects that are and are not deployed and the project displays buttons to the relevant links reflecting this.
 
 ## Next Steps
 
